@@ -20,3 +20,5 @@ After cluster creation is finished, the Credit Card Fraud Demo can be added as a
 After completion of the wizard the simulation will start and transactions will begin flowing into the UI. 
 
 To maintain cluster integrity, ssh into the cluster after the demo and run the /stopSimulation.sh script found in /root/CreditCardTransactionMonitor. This will shut down the simulation and stop the transaction flow.
+
+For additional analysis: Add Zeppelin Notebook as an Ambari Service. Import Note from URL: https://raw.githubusercontent.com/therson/Credit-Card-Fraud-Demo/master/Zeppelin/note.json. This note is the notebook to create the fraud prediction model used to predict whether an individual transaction is fradulent or not.
