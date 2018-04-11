@@ -14,7 +14,7 @@ class DemoControl(Script):
     Execute('git clone ' + params.sam_extentions_download_url)
     if not os.path.exists(params.install_dir+'/CreditCardTransactionMonitor'):
         Execute('git clone ' + params.download_url)
-    Execute(params.install_dir + '/CloudBreakArtifacts/recipes/credit-fraud-sam-install.sh ' + params.install_dir + ' '+ params.google_api_key)
+    Execute(params.install_dir + '/Credit-Card-Fraud-Demo/recipes/credit-fraud-sam-install.sh ' + params.install_dir + ' '+ params.google_api_key)
     os.chdir(params.install_dir+'/CreditCardTransactionMonitor/CreditCardTransactionSimulator')
     Execute('mvn clean package')
     os.chdir(params.install_dir+'/CreditCardTransactionMonitor/CreditCardTransactionSimulator/target')
