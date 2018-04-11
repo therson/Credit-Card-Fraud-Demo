@@ -663,23 +663,23 @@ sed -r -i 's;\{\{mysql_host\}\};'$AMBARI_HOST';' $ROOT_PATH/CloudBreakArtifacts/
 echo "*********************************Stopping Prometheous..."
 kill -9 $(netstat -nlp|grep 9090|grep -Po '[0-9]+/[a-zA-Z]+'|grep -Po '[0-9]+')
 
-echo "*********************************Install TRUCKING_DEMO_CONTROL service..."
-cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/TRUCKING_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
+#echo "*********************************Install TRUCKING_DEMO_CONTROL service..."
+#cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/TRUCKING_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
-echo "*********************************Install DEVICE_MANAGER_DEMO_CONTROL_SAM service..."
-cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/DEVICE_MANAGER_DEMO_CONTROL_SAM /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
+#echo "*********************************Install DEVICE_MANAGER_DEMO_CONTROL_SAM service..."
+#cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/DEVICE_MANAGER_DEMO_CONTROL_SAM /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
-chmod 755 /var/lib/ambari-agent/cache/stacks/HDP/$VERSION/services/DEVICE_MANAGER_DEMO_CONTROL_SAM/package/scripts/device-manager-sam-install.sh
+#chmod 755 /var/lib/ambari-agent/cache/stacks/HDP/$VERSION/services/DEVICE_MANAGER_DEMO_CONTROL_SAM/package/scripts/device-manager-sam-install.sh
 
 echo "*********************************Install CREDIT_FRAUD_DEMO_CONTROL_SAM service..."
 cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/CREDIT_FRAUD_DEMO_CONTROL_SAM /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
-echo "*********************************Install ALARM_FATIGUE_DEMO_CONTROL_SAM service..."
-git clone https://github.com/ryancicak/northcentral_hackathon $ROOT_PATH/northcentral_hackathon
-cp -Rf $ROOT_PATH/northcentral_hackathon/CloudBreakArtifacts/recipes/ALARM_FATIGUE_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
+#echo "*********************************Install ALARM_FATIGUE_DEMO_CONTROL_SAM service..."
+#git clone https://github.com/ryancicak/northcentral_hackathon $ROOT_PATH/northcentral_hackathon
+#cp -Rf $ROOT_PATH/northcentral_hackathon/CloudBreakArtifacts/recipes/ALARM_FATIGUE_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
-echo "*********************************Install TWITTER_DEMO_CONTROL service..."
-cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/TWITTER_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
+#echo "*********************************Install TWITTER_DEMO_CONTROL service..."
+#cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/TWITTER_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
 echo "*********************************Install HDF Management Pack..."
 instalHDFManagementPack 
