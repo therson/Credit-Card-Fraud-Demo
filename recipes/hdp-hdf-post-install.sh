@@ -215,11 +215,11 @@ installSchemaRegistryService () {
        	echo "*********************************Creating REGISTRY configuration..."
 
        	# Create and apply configuration
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME registry-common $ROOT_PATH/CloudBreakArtifacts/hdf-config/registry-config/registry-common.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME registry-common $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/registry-config/registry-common.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME registry-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/registry-config/registry-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME registry-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/registry-config/registry-env.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME registry-log4j $ROOT_PATH/CloudBreakArtifacts/hdf-config/registry-config/registry-log4j.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME registry-log4j $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/registry-config/registry-log4j.json
 		
        	echo "*********************************Adding REGISTRY SERVER role to Host..."
        	# Add REGISTRY_SERVER role to Ambari Host
@@ -266,13 +266,13 @@ installStreamlineService () {
        	echo "*********************************Creating STREAMLINE configuration..."
 
        	# Create and apply configuration
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME streamline-common $ROOT_PATH/CloudBreakArtifacts/hdf-config/streamline-config/streamline-common.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME streamline-common $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/streamline-config/streamline-common.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME streamline-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/streamline-config/streamline-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME streamline-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/streamline-config/streamline-env.json
 
-	/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME streamline-log4j $ROOT_PATH/CloudBreakArtifacts/hdf-config/streamline-config/streamline-log4j.json
+	/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME streamline-log4j $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/streamline-config/streamline-log4j.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME streamline_jaas_conf $ROOT_PATH/CloudBreakArtifacts/hdf-config/streamline-config/streamline_jaas_conf.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME streamline_jaas_conf $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/streamline-config/streamline_jaas_conf.json
 		
        	echo "*********************************Adding STREAMLINE SERVER role to Host..."
        	# Add STREAMLINE SERVER role to Ambari Host
@@ -324,31 +324,31 @@ installNifiService () {
        	echo "*********************************Creating NIFI configuration..."
 
        	# Create and apply configuration
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-ambari-config $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-ambari-config.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-ambari-config $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-ambari-config.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-ambari-ssl-config $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-ambari-ssl-config.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-ambari-ssl-config $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-ambari-ssl-config.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-authorizers-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-authorizers-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-authorizers-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-authorizers-env.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-bootstrap-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-bootstrap-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-bootstrap-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-bootstrap-env.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-bootstrap-notification-services-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-bootstrap-notification-services-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-bootstrap-notification-services-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-bootstrap-notification-services-env.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-env.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-flow-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-flow-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-flow-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-flow-env.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-login-identity-providers-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-login-identity-providers-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-login-identity-providers-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-login-identity-providers-env.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-node-logback-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-node-logback-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-node-logback-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-node-logback-env.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-properties $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-properties.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-properties $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-properties.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-state-management-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-state-management-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-state-management-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-state-management-env.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-jaas-conf $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-jaas-conf.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-jaas-conf $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-jaas-conf.json
 				
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-logsearch-conf $ROOT_PATH/CloudBreakArtifacts/hdf-config/nifi-config/nifi-logsearch-conf.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME nifi-logsearch-conf $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/nifi-config/nifi-logsearch-conf.json
 		
        	echo "*********************************Adding NIFI MASTER role to Host..."
        	# Add NIFI Master role to Ambari Host
@@ -427,29 +427,29 @@ installDruidService () {
        	echo "*********************************Creating DRUID configuration..."
 
        	# Create and apply configuration
-       	/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-broker $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-broker.json
+       	/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-broker $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-broker.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-common $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-common.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-common $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-common.json
 
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-coordinator $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-coordinator.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-coordinator $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-coordinator.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-env.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-historical $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-historical.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-historical $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-historical.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-log4j $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-log4j.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-log4j $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-log4j.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-logrotate $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-logrotate.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-logrotate $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-logrotate.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-middlemanager $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-middlemanager.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-middlemanager $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-middlemanager.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-overlord $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-overlord.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-overlord $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-overlord.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-router $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-router.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-router $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-router.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-superset-env $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-superset-env.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-superset-env $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-superset-env.json
 		
-		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-superset $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-superset.json
+		/var/lib/ambari-server/resources/scripts/configs.sh set $AMBARI_HOST $CLUSTER_NAME druid-superset $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-superset.json
 		
 		export HOST1=$(getHostByPosition 1)
 		export HOST2=$(getHostByPosition 2)
@@ -553,7 +553,7 @@ configureAmbariRepos (){
 	gpgcheck=0
 	EOF
 	
-	curl -u admin:admin -d @$ROOT_PATH/CloudBreakArtifacts/hdf-config/api-payload/repo_update.json -H "X-Requested-By: ambari" -X PUT http://$AMBARI_HOST:8080/api/v1/stacks/HDP/versions/2.6/repository_versions/1
+	curl -u admin:admin -d @$ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/api-payload/repo_update.json -H "X-Requested-By: ambari" -X PUT http://$AMBARI_HOST:8080/api/v1/stacks/HDP/versions/2.6/repository_versions/1
 }
 
 installMySQL (){
@@ -617,8 +617,8 @@ enablePhoenix () {
 }
 
 #echo "*********************************Download Configurations"
-#git clone https://github.com/vakshorton/CloudBreakArtifacts
-#cd CloudBreakArtifacts
+#git clone https://github.com/vakshorton/Credit-Card-Fraud-Demo
+#cd Credit-Card-Fraud-Demo
 
 export ROOT_PATH=~
 echo "*********************************ROOT PATH IS: $ROOT_PATH"
@@ -653,33 +653,33 @@ export VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]
 export INTVERSION=$(echo $VERSION*10 | bc | grep -Po '([0-9][0-9])')
 echo "*********************************HDP VERSION IS: $VERSION"
 
-sed -r -i 's;\{\{mysql_host\}\};'$AMBARI_HOST';' $ROOT_PATH/CloudBreakArtifacts/hdf-config/registry-config/registry-common.json
-sed -r -i 's;\{\{mysql_host\}\};'$AMBARI_HOST';' $ROOT_PATH/CloudBreakArtifacts/hdf-config/streamline-config/streamline-common.json
-sed -r -i 's;\{\{registry_host\}\};'$AMBARI_HOST';' $ROOT_PATH/CloudBreakArtifacts/hdf-config/streamline-config/streamline-common.json
-sed -r -i 's;\{\{superset_host\}\};'$AMBARI_HOST';' $ROOT_PATH/CloudBreakArtifacts/hdf-config/streamline-config/streamline-common.json
-sed -r -i 's;\{\{mysql_host\}\};'$AMBARI_HOST';' $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-common.json
-sed -r -i 's;\{\{mysql_host\}\};'$AMBARI_HOST';' $ROOT_PATH/CloudBreakArtifacts/hdf-config/druid-config/druid-superset.json
+sed -r -i 's;\{\{mysql_host\}\};'$AMBARI_HOST';' $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/registry-config/registry-common.json
+sed -r -i 's;\{\{mysql_host\}\};'$AMBARI_HOST';' $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/streamline-config/streamline-common.json
+sed -r -i 's;\{\{registry_host\}\};'$AMBARI_HOST';' $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/streamline-config/streamline-common.json
+sed -r -i 's;\{\{superset_host\}\};'$AMBARI_HOST';' $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/streamline-config/streamline-common.json
+sed -r -i 's;\{\{mysql_host\}\};'$AMBARI_HOST';' $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-common.json
+sed -r -i 's;\{\{mysql_host\}\};'$AMBARI_HOST';' $ROOT_PATH/Credit-Card-Fraud-Demo/hdf-config/druid-config/druid-superset.json
 
 echo "*********************************Stopping Prometheous..."
 kill -9 $(netstat -nlp|grep 9090|grep -Po '[0-9]+/[a-zA-Z]+'|grep -Po '[0-9]+')
 
 #echo "*********************************Install TRUCKING_DEMO_CONTROL service..."
-#cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/TRUCKING_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
+#cp -Rf $ROOT_PATH/Credit-Card-Fraud-Demo/recipes/TRUCKING_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
 #echo "*********************************Install DEVICE_MANAGER_DEMO_CONTROL_SAM service..."
-#cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/DEVICE_MANAGER_DEMO_CONTROL_SAM /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
+#cp -Rf $ROOT_PATH/Credit-Card-Fraud-Demo/recipes/DEVICE_MANAGER_DEMO_CONTROL_SAM /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
 #chmod 755 /var/lib/ambari-agent/cache/stacks/HDP/$VERSION/services/DEVICE_MANAGER_DEMO_CONTROL_SAM/package/scripts/device-manager-sam-install.sh
 
 echo "*********************************Install CREDIT_FRAUD_DEMO_CONTROL_SAM service..."
-cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/CREDIT_FRAUD_DEMO_CONTROL_SAM /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
+cp -Rf $ROOT_PATH/Credit-Card-Fraud-Demo/recipes/CREDIT_FRAUD_DEMO_CONTROL_SAM /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
 #echo "*********************************Install ALARM_FATIGUE_DEMO_CONTROL_SAM service..."
 #git clone https://github.com/ryancicak/northcentral_hackathon $ROOT_PATH/northcentral_hackathon
-#cp -Rf $ROOT_PATH/northcentral_hackathon/CloudBreakArtifacts/recipes/ALARM_FATIGUE_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
+#cp -Rf $ROOT_PATH/northcentral_hackathon/Credit-Card-Fraud-Demo/recipes/ALARM_FATIGUE_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
 #echo "*********************************Install TWITTER_DEMO_CONTROL service..."
-#cp -Rf $ROOT_PATH/CloudBreakArtifacts/recipes/TWITTER_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
+#cp -Rf $ROOT_PATH/Credit-Card-Fraud-Demo/recipes/TWITTER_DEMO_CONTROL /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/
 
 echo "*********************************Install HDF Management Pack..."
 instalHDFManagementPack 
