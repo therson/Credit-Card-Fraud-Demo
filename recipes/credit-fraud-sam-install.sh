@@ -683,4 +683,5 @@ importPMMLModel $ROOT_PATH/CreditCardTransactionMonitor/Model credit-fraud.xml c
 echo "********************************* Import SAM Template"
 TOPOLOGY_ID=$(importSAMTopology $ROOT_PATH/CreditCardTransactionMonitor/SAM/template/credit-fraud.json Credit-Fraud)
 echo "********************************* Deploy SAM Topology"
-deploySAMTopology "$TOPOLOGY_ID"	
+deploySAMTopology "$TOPOLOGY_ID"
+echo "0 0 * * * root rm -rf /root/CreditCardTransactionSim.log 	
